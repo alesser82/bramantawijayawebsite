@@ -1429,6 +1429,47 @@ body{
 
     /* END INTIMATE C */
 
+    /* INTIMATE IM VA */
+
+    .imva-content {
+        margin: 2.7% 0px;
+    }
+
+    .intimate-imva img {
+        width: 100%;
+    }
+
+    .imva-title-group {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .imva-header-img {
+        max-width: 15%;
+    }
+
+    .imva-title-line {
+        width: 100px;
+        background: #414042;
+        height: 2px;
+        margin: 0px 3%;
+    }
+
+    .imva-title-text {
+        font-family: 'Suisse_Works_Medium_Italic','Times New Roman', Times, serif;
+        font-style: italic;
+        font-size: 13vw;
+        letter-spacing: 2.5px;
+        margin-bottom: -6.5%;
+    }
+
+    .imva-header-paragraph {
+        margin-top: 6vh;
+        font-family: "Ahamono",sans-serif;
+    }
+
+    /* END INTIMATE IM VA */
+
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -2151,6 +2192,69 @@ body{
     }
 
     /* END INTIMATE B */
+
+    /* INTIMATE IM VA */
+
+    .imva-content-half {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .imva-content-quarter {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .imva-header-text {
+        padding: 4% 6%;
+    }
+
+    .imva-image-full {
+        margin: 0% 2%;
+    }
+
+    .imva-image-half {
+        margin: 0% 2%;
+    }
+
+    .imva-image-half {
+        min-width: 45.5%;
+        max-width: 45.5%;
+        display: inline-block;
+    }
+
+    .imva-title-group {
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    .imva-header-img {
+        max-width: 15%;
+    }
+
+    .imva-title-line {
+        width: 100px;
+        background: #414042;
+        height: 2px;
+        margin: 0px 3%;
+    }
+
+    .imva-title-text {
+        font-family: 'Suisse_Works_Medium_Italic','Times New Roman', Times, serif;
+        font-style: italic;
+        font-size: 3vw;
+        letter-spacing: 2.5px;
+        margin-bottom: -6.5%;
+    }
+
+    .imva-header-paragraph {
+        margin-top: 7vh;
+        font-size: 1vw;
+    }
+
+    /* END INTIMATE IM VA */
 
 }
 
@@ -3526,6 +3630,27 @@ body{
     }
 
     /* END INTIMATE C */
+
+    /* INTIMATE IMVA */
+
+    .imva-header {
+        margin-top: 1%;
+    }
+
+    .imva-content-half {
+        -ms-flex: 0 0 70%;
+        flex: 0 0 70%;
+        max-width: 70%;
+    }
+
+    .imva-content-quarter {
+        -ms-flex: 0 0 30%;
+        flex: 0 0 30%;
+        max-width: 30%;
+    }
+
+    /* END INTIMATE IMVA */
+
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
