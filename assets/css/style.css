@@ -1473,14 +1473,15 @@ body{
     }
 
     .imva-product-title {
-        font-family: "Georgia",'Times New Roman', Times, serif;
-        letter-spacing: 2px;
+        font-family: 'Georgia','Times New Roman', Times, serif;
+        letter-spacing: 2.5px;
     }
 
     .imva-product-price {
         font-family: "Ahamono", sans-serif;
-        letter-spacing: 2px;
+        letter-spacing: 1.5px;
         font-size: 11px;
+        margin-top: 0.9%;
     }
 
     .product-link-group {
@@ -2411,7 +2412,7 @@ body{
     }
 
     nav .sub-menu-group {
-        background: rgba(255, 255, 255, 0);
+        background: rgba(255, 255, 255, 1);
     }
 
     .sub-menu-group a::after{
@@ -2517,6 +2518,11 @@ body{
         display: inline-block;
         margin-left: 20px;
         margin-top: 7px;
+        background: rgba(255, 255, 255, 1);
+    }
+
+    nav.home .sub-sub-menu-group:hover .sub-sub-menu-block {
+        background: rgba(255, 255, 255, 0);
     }
 
     nav.scrolled .sub-sub-menu-group:hover .sub-sub-menu-block {
@@ -3691,6 +3697,14 @@ body{
     .imva-title-text {
         font-size: 2.8vw;
         margin-bottom: -2vh;
+    }
+
+    .imva-product-title {
+        font-size: 1.1vw;
+    }
+
+    .imva-product-price {
+        font-size: 0.85vw;
     }
 
     /* END INTIMATE IMVA */
