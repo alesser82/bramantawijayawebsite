@@ -2873,7 +2873,8 @@ body{
     /* ABOUT */
 
     .about-content-1 {
-        margin-top: 85px;
+        /* margin-top: 83px; */
+        padding-top: 25px;
     }
 
     .about-content-1 .column-1 .about-image {
