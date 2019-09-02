@@ -1432,7 +1432,7 @@ body{
     /* INTIMATE IM VA */
 
     .imva-content {
-        margin: 2.7% 0px;
+        margin: 2.2% 0px;
     }
 
     .intimate-imva img {
@@ -1464,8 +1464,40 @@ body{
     }
 
     .imva-header-paragraph {
-        margin-top: 6vh;
         font-family: "Ahamono",sans-serif;
+        font-size: 3.5vw;
+    }
+
+    .imva-product-group {
+        margin-top: 6%;
+    }
+
+    .imva-product-title {
+        font-family: "Georgia",'Times New Roman', Times, serif;
+        letter-spacing: 2px;
+    }
+
+    .imva-product-price {
+        font-family: "Ahamono", sans-serif;
+        letter-spacing: 2px;
+        font-size: 11px;
+    }
+
+    .product-link-group {
+        color: #444548;
+        transition: 0.3s;
+    }
+
+    .product-link-group img {
+        transition: 0.3s;
+    }
+
+    .product-link-group:hover {
+        color: #444548;
+    }
+
+    .product-link-group:hover img {
+        opacity: 0.9;
     }
 
     /* END INTIMATE IM VA */
@@ -1487,7 +1519,6 @@ body{
 
     nav .logo span {
         left: 0px;
-        margin-top: 10px;
 
     }
 
@@ -2208,26 +2239,25 @@ body{
     }
 
     .imva-header-text {
-        padding: 4% 6%;
+        padding: 1.5% 6%;
     }
 
     .imva-image-full {
-        margin: 0% 2%;
+        margin: 0% 1.4%;
     }
 
     .imva-image-half {
-        margin: 0% 2%;
+        margin: 3% 1.4%;
     }
 
     .imva-image-half {
-        min-width: 45.5%;
-        max-width: 45.5%;
+        min-width: 46.7%;
+        max-width: 46.7%;
         display: inline-block;
     }
 
     .imva-title-group {
-        margin-top: 0px;
-        margin-bottom: 0px;
+        margin: 3% 0%;
     }
 
     .imva-header-img {
@@ -2244,14 +2274,14 @@ body{
     .imva-title-text {
         font-family: 'Suisse_Works_Medium_Italic','Times New Roman', Times, serif;
         font-style: italic;
-        font-size: 3vw;
+        font-size: 6.5vw;
         letter-spacing: 2.5px;
-        margin-bottom: -6.5%;
+        margin-bottom: -3%;
     }
 
     .imva-header-paragraph {
-        margin-top: 7vh;
-        font-size: 1vw;
+        font-size: 1.8vw;
+        margin: 1.5% 0px;
     }
 
     /* END INTIMATE IM VA */
@@ -3647,6 +3677,20 @@ body{
         -ms-flex: 0 0 30%;
         flex: 0 0 30%;
         max-width: 30%;
+    }
+
+    .imva-header-paragraph {
+        font-size: 0.9vw;
+        margin: 7% 0px;
+    }
+
+    .imva-title-group {
+        margin: 20% 0%;
+    }
+
+    .imva-title-text {
+        font-size: 2.8vw;
+        margin-bottom: -2vh;
     }
 
     /* END INTIMATE IMVA */
