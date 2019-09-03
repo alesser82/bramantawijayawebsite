@@ -166,6 +166,25 @@ $(window).ready(function () {
                 mouseDrag: false,
                 touchDrag: false
             });
+            $('footer a').removeClass('text-white');
+        }
+    }
+
+    function changeNavbar(color) {
+        if (color == 'black') {
+            $('nav').removeClass('home');
+        }else {
+            $('nav').addClass('home');
+        }
+    }
+
+    function changeFooter(color) {
+        if (color == 'black') {
+            $('footer').removeClass('fixed-footer');
+            $('footer a').removeClass('text-white');
+        } else {
+            $('footer').addClass('fixed-footer');
+            $('footer a').addClass('text-white');
         }
     }
 
@@ -174,6 +193,21 @@ $(window).ready(function () {
         bannerProduct(owl);
     } else if (owl.hasClass('intimate-banner')) {
         intimateBanner(owl);
+        owl.on('changed.owl.carousel', function (event) {
+            // console.log(event);
+            let item = event.item.index;
+            let color = '';
+            if (item > 3) {
+                let color = 'black';
+                changeNavbar(color);
+                changeFooter(color);
+            } else {
+                let color = 'white';
+                changeNavbar(color);
+                changeFooter(color);
+            }
+            console.log(item);
+        });
     }else{
         bannerSlide(owl);
     }
