@@ -463,17 +463,31 @@ body{
     /* CONTENT 1 */
 
     .home-content-1 .column-1 img {
-        width: 80%;
+        width: 100%;
+    }
+
+    .home-img-1,
+    .home-img-2 {
+        max-width: 85%;
+    }
+
+    .home-img-3 {
+        max-width: 80%;
+    }
+
+    .home-img-4 {
+        max-width: 90%;
     }
 
     .home-content-1 .column-2 img {
-        width: 90%;
+        width: 100%;
     }
 
     .home-content-1 p {
         font-size: 12px;
         text-align: center;
         font-family: "Avenir";
+        letter-spacing: 1px;
     }
 
     /* END CONTENT 1 */
@@ -490,11 +504,11 @@ body{
     }
 
     .home-content-2 .column-1 img {
-        width: 80%;
+        width: 100%;
     }
 
     .home-content-2 .column-2 img {
-        width: 90%;
+        width: 100%;
     }
 
 
@@ -1552,22 +1566,29 @@ body{
 
     .home-content-1 .column-1,
     .home-content-1 .column-2 {
-        max-height: 70vh;
         overflow: hidden;
         text-align: right;
     }
 
     .home-content-1 .column-1 img{
         text-align: right;
-        width: 45%;
+        width: 100%;
     }
 
     .home-content-1 .text {
         position: absolute;
-        width: 60%;
+        max-width: 50%;
         bottom: 20%;
         left: 0%;
-        padding: 0 4vw;
+    }
+
+    .home-img-2 {
+        max-width: 100%;
+        max-height: 50vh;
+    }
+
+    .home-img-1 {
+        max-width: 50%;
     }
 
     .home-content-1 p {
@@ -1579,20 +1600,30 @@ body{
     /* HOME CONTENT 2 */
 
     .home-content-2 .column-1 img{
-        width: 55%;
+        width: 100%;
     }
 
     .home-content-2 .column-2 img {
-        width: 65%;
+        width: 100%;
     }
 
     .home-content-2 .column-1 {
-        margin-left: -30px;
+        padding:0px;
+        max-width: 56%;
     }
 
     .home-content-2 .column-2 {
-        padding:0;
-        margin-left: 30px;
+        min-width: 44%;
+        max-width: 44%;
+    }
+
+    .home-content-2 .column-2 {
+        padding:0px;
+    }
+
+    .home-img-4 {
+        padding-right: 8%;
+        max-width:100%;
     }
 
     /* END HOME CONTENT 2 */
@@ -2415,6 +2446,18 @@ body{
         background: rgba(255, 255, 255, 1);
     }
 
+    nav.home .sub-menu-group {
+        background: rgba(255, 255, 255, 0);
+    }
+
+    nav.about .sub-menu-group {
+        background: #E6E7E8;
+    }
+
+    nav.scrolled.about .sub-menu-group {
+        background: rgba(255, 255, 255, 0.5);
+    }
+
     .sub-menu-group a::after{
         content: none !important;
     }
@@ -2459,6 +2502,10 @@ body{
         padding-top: 29px;
     }
 
+    nav.scrolled.about .menu-group:hover .sub-menu-group {
+        padding-top: 10px;
+    }
+
     nav.home .menu-group:hover .sub-menu-group a {
         background: none;
     }
@@ -2466,6 +2513,16 @@ body{
     nav.scrolled .menu-group:hover .sub-menu-group a {
         border-top: solid;
         border-width: 1px;
+    }
+
+    nav.scrolled.about .menu-group:hover .sub-menu-group a {
+        border-top: none;
+        border-width: unset;
+    }
+
+    nav.scrolled.about .menu-group:hover .sub-menu-group a {
+        border-top: none;
+        border-width: unset;
     }
 
     nav .menu-group:hover .sub-menu-group a:hover {
@@ -2517,7 +2574,15 @@ body{
     nav .sub-sub-menu-group:hover .sub-sub-menu-block {
         display: inline-block;
         margin-left: 20px;
-        margin-top: 7px;
+        margin-top: 4px;
+        background: rgba(255, 255, 255, 1);
+    }
+
+    nav.about .sub-sub-menu-group:hover .sub-sub-menu-block {
+        background: #E6E7E8;
+    }
+
+    nav.about.scrolled .sub-sub-menu-group:hover .sub-sub-menu-block {
         background: rgba(255, 255, 255, 1);
     }
 
@@ -2670,14 +2735,61 @@ body{
 
     /* CONTENT 1 */
 
-    .home-content-1 .column-1,
+    /* .home-content-1 .column-1,
     .home-content-1 .column-2 {
         max-height: 100vh;
+    } */
+
+    .home-img-2 {
+        max-width: 100%;
+        max-height: 100vh;
+    }
+
+    .home-img-1 {
+        max-width: 40%;
+    }
+
+    .home-content-1 .column-1 {
+        min-width: 70%;
+        max-width: 70%;
+    }
+
+    .home-content-1 .column-2 {
+        margin-left: 2%;
+        max-width: 28%;
+    }
+
+    .home-content-1 .text {
+        left:15%;
+        max-width: 30%;
+    }
+
+    .home-content-1 p {
+        font-size: 0.9vw;
     }
 
     /* END CONTENT 1 */
 
     /* CONTENT 2 */
+    .home-img-3 {
+        max-width: 55%;
+    }
+
+    .home-img-4 {
+        max-width: 100%;
+        padding-right: 45%;
+        background: #E6E7E8;
+    }
+
+    .home-content-2 .column-1 {
+        max-width: 56%;
+    }
+
+    .home-content-2 .column-2 {
+        padding-left: 3%;
+        max-width: 10%;
+        background: none;
+    }
 
     /* END CONTENT 2 */
 
@@ -3396,6 +3508,10 @@ body{
         margin-top: 9vh;
     }
 
+    .product-list.non-sidebar {
+        margin-top: 0vh;
+    }
+
     .sidebar-menu {
         padding: 11.5vh 0px;
         -ms-flex: 0 0 14%;
@@ -3419,6 +3535,11 @@ body{
         text-align: right;
     }
 
+    .sidebar-menu-group.non-sidebar {
+        text-align: left;
+        width: 41vw;
+    }
+
     .sidebar-list-menu {
         position: relative;
         z-index: 1000;
@@ -3429,7 +3550,7 @@ body{
         transition: 0.3s;
         padding: 1.5vh 0px;
         left: 0;
-        text-align: right;
+        text-align: left;
     }
 
     .sidebar-menu-group.collapsed .sidebar-list-menu {
@@ -3473,6 +3594,15 @@ body{
     .sidebar-menu-group.collapsed .sidebar-menu-btn{
         display: block;
         line-height: 3vh;
+    }
+
+    .sidebar-menu-group.collapsed .sidebar-menu-btn.non-sidebar {
+        display: list-item;
+        line-height: 3vh;
+    }
+
+    .info-list {
+        padding-left: 1.25vw;
     }
 
     .sidebar-menu-btn:hover {
@@ -3525,6 +3655,11 @@ body{
         margin-top: 3vh;
     }
 
+    .product-detail.non-sidebar {
+        margin-top: 0vh;
+        margin-left: 2vw;
+    }
+
     .product-detail-carousel .item {
         margin: 1.2vh 0px;
     }
@@ -3545,10 +3680,11 @@ body{
         -ms-flex: 0 0 53%;
         flex: 0 0 53%;
         max-width: 53%;
+        padding: 6vh 5vw 6vh 6vw;
     }
 
-    .product-detail-description-column {
-        padding: 6vh 5vw 6vh 6vw;
+    .product-detail-description-column.non-sidebar {
+        padding-right: 12vw;
     }
 
     .product-detail-type,
@@ -3565,7 +3701,7 @@ body{
     }
 
     .product-detail-description {
-        font-size: 0.95vw;
+        font-size: 1vw;
     }
 
     .product-detail-add {
@@ -3587,8 +3723,8 @@ body{
         color: black;
     }
 
-    .product-detail-price {
-        margin: 3vh 0px;
+    .product-detail-price-group {
+        margin-bottom: 6.5vh;
     }
 
     .product-line-price-long {

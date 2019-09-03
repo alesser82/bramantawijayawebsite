@@ -231,8 +231,10 @@ $(window).ready(function () {
     $('div.col-sm-12').each(function (i) {
         $('div.col-sm-12').eq(i).click(function () {
             if (!$(this).hasClass('sidebar-menu')) {
-                $('.sidebar-menu-group').removeClass('collapsed');
-            }
+                if ($(window).width() < 1000) {
+                    $('.sidebar-menu-group').removeClass('collapsed');
+                }
+            } 
         });
     });
 
