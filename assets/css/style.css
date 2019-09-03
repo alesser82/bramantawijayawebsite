@@ -522,6 +522,7 @@ body{
 
     .home-content-3 p{
         font-size: 12px;
+        letter-spacing: 1px;
     }
 
     /* END HOME CONTENT 3 */
@@ -2772,7 +2773,7 @@ body{
 
     /* CONTENT 2 */
     .home-img-3 {
-        max-width: 55%;
+        max-width: 50%;
     }
 
     .home-img-4 {
@@ -2789,6 +2790,10 @@ body{
         padding-left: 3%;
         max-width: 10%;
         background: none;
+    }
+
+    .home-content-3 p {
+        font-size: 0.9vw;
     }
 
     /* END CONTENT 2 */
