@@ -295,6 +295,10 @@ body{
         color: #A3A8B1;
     }
 
+    nav .menu-group-link {
+        text-align: center;
+    }
+
     nav .menu div.line{
         display: none;
     }
@@ -2550,6 +2554,7 @@ body{
 
     nav.scrolled .menu-group:hover .sub-menu-group {
         padding-top: 29px;
+        background: rgba(0, 0, 0, 0);
     }
 
     nav.scrolled.about .menu-group:hover .sub-menu-group {
@@ -2642,6 +2647,7 @@ body{
 
     nav.scrolled .sub-sub-menu-group:hover .sub-sub-menu-block {
         margin-left: 20px;
+        background: rgba(255, 255, 255, 0.2);
     }
 
     nav .menu-group,
