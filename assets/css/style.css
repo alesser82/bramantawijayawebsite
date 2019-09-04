@@ -2522,6 +2522,10 @@ body{
         overflow: visible;
     }
 
+    nav .row {
+        padding: 3vh 3vw;
+    }
+
     nav.scrolled .sub-menu-link,
     nav.scrolled .sub-sub-menu-group-link {
         padding-left:0.5rem !important;
