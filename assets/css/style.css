@@ -577,7 +577,7 @@ body{
 
     /* SPOSA CONTENT 1 */
     .sposa-content-1 {
-        margin-top: 4.5rem;
+        margin-top: 5.5rem;
     }
 
     .sposa-content-1 .col-sm-12 div {
@@ -603,7 +603,7 @@ body{
     }
 
     .sposa-content-1 .col-lg-7 div {
-        min-height: 70vh;
+        min-height: 60vh;
     }
 
     .sposa-content-1 .col-lg-5 div,
@@ -624,15 +624,26 @@ body{
         min-height: 70vh;
     }
 
+    .sposa-content-2 .column-1 {
+        min-height: unset;
+        max-height: unset;
+    }
+
     .sposa-content-2 .column-1 div{
-        min-width: 80%;
-        min-height: 80%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        min-width: 100%;
+        min-height: 100%;
+        min-height: 55vh;
+        max-height: 55vh;
+
     }
 
     .sposa-content-2 .column-2{
         min-width: 100vw;
         max-width: 100vw;
-        min-height: 70vh;
+        min-height: 35vh;
     }
 
     .sposa-content-2 .column-2 div{
@@ -709,7 +720,7 @@ body{
     }
 
     .sposa-content-6 .col-sm-12.column-2 {
-        min-height: 50vh;
+        min-height: 48vh;
     }
 
     .sposa-content-6 div.column-1 div {
@@ -1776,18 +1787,21 @@ body{
 
     .sposa-content-2 .column-1 {
         background: #E6E7E8;
-        min-width: 49vw;
-        min-height: 80vh;
+        min-width: 45vw;
+        max-width: 45vw;
+        min-height: 70vh;
+        max-height: 70vh;
     }
 
     .sposa-content-2 .column-1 div {
-        min-width: 50%;
-        min-height: 50%;
+        min-width: 45%;
+        min-height: 65%;
     }
 
     .sposa-content-2 .column-2 {
-        min-width: 49vw;
-        min-height: 80vh;
+        min-width: 53.5vw;
+        min-height: 70vh;
+        max-height: 70vh;
     }
 
     .sposa-content-2 .column-2 div {
@@ -2976,14 +2990,14 @@ body{
     .sposa-content-4 .col-md-12 {
         min-width: 100vw;
         max-width: 100vw;
-        min-height: 50vh;
+        min-height: 55vh;
         display: flex;
         justify-content: center;
     }
 
     .sposa-content-4 .col-md-12 div {
-        min-width: 20%;
-        min-height: 20%;
+        min-width: 18%;
+        min-height: 40%;
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
