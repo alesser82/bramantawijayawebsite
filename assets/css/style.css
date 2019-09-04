@@ -3142,6 +3142,37 @@ body{
         min-height: 107vh;
     }
 
+    .sposa-mixed a div {
+        transition: 0.3s;
+        -webkit-animation-name: opacityAnimation;
+        /* Safari 4.0 - 8.0 */
+        -webkit-animation-duration: 2s;
+        /* Safari 4.0 - 8.0 */
+        animation-name: opacityAnimation;
+        animation-duration: 2s;
+    }
+
+    @-webkit-keyframes opacityAnimation {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    /* Standard syntax */
+    @keyframes opacityAnimation {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
     .sposa-mixed a:hover div {
         opacity: 0.9;
     }
