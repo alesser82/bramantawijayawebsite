@@ -3480,7 +3480,8 @@ body{
     }
 
     .blog-content-text {
-        font-size: 15px;
+        font-size: 0.9vw;
+        max-width: 52vw;
     }
 
     .blog-content-title {
@@ -3642,11 +3643,13 @@ body{
 
     .sposa-single-title {
         max-width: 70%;
+        margin: 5vh 0vw;
     }
 
     .sposa-single-header h2 {
         max-width: 100%;
         margin: 0;
+        font-size: 2.3vw;
     }
 
     .sposa-single-text {
@@ -3878,8 +3881,12 @@ body{
         font-size: 0.9vw;
     }
 
+    .product-list-image img {
+        transition: 0.3s;
+    }
+
     .product-column:hover .product-list-image img{
-        opacity: 0.9;
+        opacity: 0.95;
     }
 
     #sidebar-menu-info {
