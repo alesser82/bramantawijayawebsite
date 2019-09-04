@@ -89,6 +89,14 @@ body{
     font-family: "Ahamono",sans-serif !important;
 }
 
+.georgia-text {
+    font-family: "Georgia",'Times New Roman', Times, serif !important;
+}
+
+.georgia-bold {
+    font-family: "Georgia Bold",'Times New Roman', Times, serif !important;
+}
+
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 320px) {
     /* OPENING */
@@ -370,6 +378,12 @@ body{
 
     .banner{
         margin-top: 3.5rem;
+        -webkit-animation-name: opacityAnimation;
+        /* Safari 4.0 - 8.0 */
+        -webkit-animation-duration: 1.5s;
+        /* Safari 4.0 - 8.0 */
+        animation-name: opacityAnimation;
+        animation-duration: 1.5s;
     }
 
     .banner .position-absolute {
@@ -564,6 +578,15 @@ body{
     /* SPOSA CONTENT 1 */
     .sposa-content-1 {
         margin-top: 4.5rem;
+    }
+
+    .sposa-content-1 .col-sm-12 div {
+        -webkit-animation-name: opacityAnimation;
+        /* Safari 4.0 - 8.0 */
+        -webkit-animation-duration: 2s;
+        /* Safari 4.0 - 8.0 */
+        animation-name: opacityAnimation;
+        animation-duration: 2s;
     }
 
     .sposa-content-1 .col-lg-7 {
@@ -820,13 +843,14 @@ body{
 
     .blog-opening .col-sm-12 {
         flex-direction: column;
+        /* margin-top: 4vh; */
     }
 
     .blog-opening h2 {
         font-size: 30px;
         font-family: 'Georgia';
         font-weight: 1000;
-        letter-spacing: 5px;
+        letter-spacing: 2px;
         color: #444548;
     }
 
@@ -839,6 +863,7 @@ body{
     .blog-opening p {
         font-size: 14px;
         color: #444548;
+        letter-spacing: 0.75px;
     }
 
     .blog-menu .line {
@@ -885,12 +910,13 @@ body{
     .category-blog {
         font-size: 13px;
         color: #68656C;
+        letter-spacing: 1px;
     }
 
     .title-blog-thumbnail {
         font-size: 16px;
         font-family: 'Georgia','Times New Roman', Times, serif;
-        letter-spacing: 5px;
+        letter-spacing: 2.5px;
     }
 
     .blog-link-group {
@@ -900,6 +926,7 @@ body{
     .link-blog-thumbnail {
         font-size: 16px;
         color: #414042;
+        letter-spacing: 1px;
     }
 
     .link-blog-thumbnail:hover {
@@ -950,7 +977,7 @@ body{
 
     .about-line {
         width: 360px;
-        height: 2px;
+        height: 1px;
         background: #FFFFFF;
     }
 
@@ -2061,7 +2088,6 @@ body{
 
     .blog-opening h2 {
         font-size: 30px;
-        letter-spacing: 5px;
     }
 
     .blog-opening .line {
@@ -2782,6 +2808,12 @@ body{
         margin-top: 0px;
         max-height: 100vh;
         overflow: hidden;
+        -webkit-animation-name: opacityAnimation;
+        /* Safari 4.0 - 8.0 */
+        -webkit-animation-duration: 2s;
+        /* Safari 4.0 - 8.0 */
+        animation-name: opacityAnimation;
+        animation-duration: 2s;
     }
 
     .intimate-banner-logo {
@@ -3182,11 +3214,12 @@ body{
     /* BLOG */
 
     .blog-opening h2 {
-        font-size: 40px;
+        font-size: 2.3vw;
     }
 
     .blog-opening p {
-        font-size: 18px;
+        margin-top: 2vh;
+        font-size: 1vw;
     }
 
     .blog-opening .line {
@@ -3222,6 +3255,18 @@ body{
         justify-content: flex-end;
     }
 
+    .filter-title,
+    .filter-menu a,
+    .pagination-title,
+    .pagination-number a {
+        font-size: 0.9vw;
+        letter-spacing: 0.75px;
+    }
+
+    .title-blog-thumbnail {
+        font-size: 1vw;
+    }
+
     .blog-list .col-lg-6 {
         -ms-flex: 0 0 47%;
         flex: 0 0 47%;
@@ -3242,13 +3287,17 @@ body{
         bottom: 20px;
     }
 
+    .link-blog-thumbnail {
+        font-size: 0.9vw;
+    }
+
     /* END BLOG */
 
     /* ABOUT */
 
     .about-content-1 {
-        /* margin-top: 83px; */
-        padding-top: 4.5vh;
+        margin-top: 0px;
+        padding-top: 12vh;
     }
 
     .about-content-1 .column-1 .about-image {
@@ -3266,6 +3315,12 @@ body{
         flex: 0 0 34%;
         max-width: 34%;
         margin-left: 12%;
+        -webkit-animation-name: opacityAnimation;
+        /* Safari 4.0 - 8.0 */
+        -webkit-animation-duration: 2s;
+        /* Safari 4.0 - 8.0 */
+        animation-name: opacityAnimation;
+        animation-duration: 2s;
     }
 
     .about-content-1 .column-2 {
@@ -3273,18 +3328,57 @@ body{
         flex: 0 0 51.5%;
         max-width: 51.5%;
         margin-left: 2.5%;
+        -webkit-animation-name: opacityAnimation;
+        /* Safari 4.0 - 8.0 */
+        -webkit-animation-duration: 2s;
+        /* Safari 4.0 - 8.0 */
+        animation-name: opacityAnimation;
+        animation-duration: 2s;
     }
 
     .about-content-1 .column-1 h3,
     .about-content-1 .column-2 h3 {
         position: absolute;
         background: none;
+        font-size: 2vw;
+        opacity: 0;
+    }
+
+    /* Safari 4.0 - 8.0 */
+    @-webkit-keyframes aboutLine {
+    from {width: 0vw}
+    to {width: 26vw}
+    }
+
+    /* Standard syntax */
+    @keyframes aboutLine {
+    from {width: 0vw}
+    to {width: 26vw}
     }
 
     .about-content-1 .column-1 h3 {
-        left: 30%;
-        top: 35%;
+        left: 26%;
+        top: 35vh;
         padding-bottom: 10px;
+        -webkit-animation-name: opacityAnimation;
+        /* Safari 4.0 - 8.0 */
+        -webkit-animation-duration: 1s;
+        /* Safari 4.0 - 8.0 */
+        animation-name: opacityAnimation;
+        animation-duration: 1s;
+        animation-delay: 0s;
+        animation-fill-mode: forwards;
+    }
+
+    .about-content-1 .column-2 h3 {
+        -webkit-animation-name: opacityAnimation;
+        /* Safari 4.0 - 8.0 */
+        -webkit-animation-duration: 0.5s;
+        /* Safari 4.0 - 8.0 */
+        animation-name: opacityAnimation;
+        animation-duration: 0.5s;
+        animation-delay: 2s;
+        animation-fill-mode: forwards;
     }
 
     .about-content-1 .about-line {
@@ -3293,22 +3387,31 @@ body{
 
     .about-content-1 .about-line.bottom {
         display: block;
-        left: 30%;
-        top: 43%;
+        left: 26%;
+        top: 43vh;
         position: absolute;
-        width: 335px;
+        width: 0vw;
+        -webkit-animation-name: aboutLine;
+        /* Safari 4.0 - 8.0 */
+        -webkit-animation-duration: 1s;
+        /* Safari 4.0 - 8.0 */
+        animation-name: aboutLine;
+        animation-duration: 1s;
+        animation-delay: 1s;
+        animation-fill-mode: forwards;
     }
 
     .about-content-1 .column-2 h3 {
-        top: 41%;
+        top: 41vh;
     }
 
     .about-content-1 .column-2 p {
         margin:50px 0px 90px 0px;
         color: #414042;
         display: block;
-        min-width: 35vw;
-        max-width: 35vw;
+        min-width: 28vw;
+        max-width: 28vw;
+        font-size: 0.9vw;
     }
 
     .about-content-2 {
@@ -3322,8 +3425,9 @@ body{
         max-width: 100%;
     }
     .about-content-2 p {
-        font-size: 23px;
+        font-size: 1.5vw;
         margin-top: 10px;
+        color: #414042;
     }
 
     .about-content-2 .column-2 {
@@ -3333,9 +3437,9 @@ body{
     }
 
     .about-content-2 .about-image {
-        min-width: 70%;
-        max-width: 70%;
-        min-height: 65vh;
+        min-width: 45%;
+        max-width: 45%;
+        min-height: 45vh;
     }
 
     .about-content-3 .column-1 .about-image,
@@ -3364,7 +3468,7 @@ body{
     .about-content-3 p,
     .about-content-4 p,
     .about-content-5 p {
-        font-size: 15px;
+        font-size: 1vw;
     }
 
     /* END ABOUT */
