@@ -377,7 +377,7 @@ body{
     /* BANNER */
 
     .banner{
-        margin-top: 3.5rem;
+        margin-top: 5rem;
         -webkit-animation-name: opacityAnimation;
         /* Safari 4.0 - 8.0 */
         -webkit-animation-duration: 1.5s;
@@ -411,7 +411,13 @@ body{
     .pink-label-item .item {
         display: flex !important;
         flex-direction: column !important;
-        min-height: 130vh !important;
+        min-height: 110vh !important;
+    }
+
+    .pink-label-item div.img-1,
+    .pink-label-item div.img-2 {
+        width: 100%;
+        min-height: 55vh;
     }
 
     .banner-text-group {
@@ -1632,7 +1638,13 @@ body{
     .pink-label-item .item {
         display: flex !important;
         flex-direction: column !important;
-        min-height: 170vh !important;
+        min-height: 150vh !important;
+        /* height: auto !important; */
+    }
+
+    .pink-label-item div.img-1,
+    .pink-label-item div.img-2 {
+        min-height: 75vh;
     }
 
     .banner-text-group {
@@ -2844,6 +2856,10 @@ body{
         bottom: 0;
         left: 0;
         z-index: 1030;
+    }
+
+    .fixed-footer a {
+        color: #ffffff;
     }
 
     .intimate-banner-line {
