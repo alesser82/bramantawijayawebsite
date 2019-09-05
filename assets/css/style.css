@@ -1016,8 +1016,8 @@ body{
 
     /* END BLOG CONTENT */
 
-    .blog-content-image.header {
-        min-height: 90vh;
+    .bg-header-blog {
+        z-index: -1;
     }
 
     .blog-content-image {
@@ -1031,19 +1031,30 @@ body{
         letter-spacing: 1px;
         margin: 2.5% 0px;
         color: #414042;
+        z-index: 1;
     }
 
     .blog-content-title {
         font-size: 25px;
-        letter-spacing: 3px;
+        letter-spacing: 2px;
         font-family: 'Georgia Bold','Times New Roman', Times, serif;
         margin: 20px 0px;
+        z-index: 1;
+        color: #414042;
+
     }
 
     .vertical-line-blog-content {
         width: 1px;
         height: 50px;
         background: #FFFFFF;
+        z-index: 1;
+        margin: auto;
+    }
+
+    .blog-content-group {
+        z-index:1;
+        margin: auto;
     }
 
     .blog-faithfully-2 .blog-content-image {
@@ -1175,40 +1186,10 @@ body{
         background: #E6E7E8;
     }
 
-    .sposa-single-2 .blog-content-image,
-    .sposa-single-4 .blog-content-image {
-        min-height: 30vh;
-        min-width: 85%;
-        max-width: 85%;
-    }
-
-    .sposa-single-3 .column-1 .image-1 {
-        min-height: 75vh;
-    }
-
-    .sposa-single-3 .column-1 .image-2 {
-        min-height: 50vh;
-    }
-
-    .sposa-single-3 .column-2 .blog-content-image {
-        min-height: 75vh;
-    }
-
     .sposa-single-4 {
         background: #E6E7E8;
     }
 
-    .sposa-single-4 .blog-content-image {
-        float: right;
-    }
-
-    .sposa-single-5 .column-1 .blog-content-image {
-        min-height: 79vh;
-    }
-
-    .sposa-single-5 .column-2 .blog-content-image {
-        min-height: 35vh;
-    }
 
     /* END SPOSA SINGLE */
 
@@ -2108,9 +2089,6 @@ body{
 
     /* BLOG FAITHFULLY SPRING SUMMER */
 
-    .blog-content-image.header {
-        min-height: 100vh;
-    }
 
     .blog-content-text {
         font-size: 16px;
@@ -2199,47 +2177,17 @@ body{
 
     /* SPOSA SINGLE */
 
-    .sposa-single-1 .blog-content-image {
-        min-height: 65vh;
-    }
 
     .sposa-single-2 {
         background: #E6E7E8;
-    }
-
-    .sposa-single-2 .blog-content-image,
-    .sposa-single-4 .blog-content-image {
-        min-height: 35vh;
-        min-width: 75%;
-        max-width: 75%;
-    }
-
-    .sposa-single-3 .column-1 .image-1 {
-        min-height: 105vh;
-    }
-
-    .sposa-single-3 .column-1 .image-2 {
-        min-height: 70vh;
     }
 
     .sposa-single-3 .column-2 {
         margin-top: 5px;
     }
 
-    .sposa-single-3 .column-2 .blog-content-image {
-        min-height: 125vh;
-    }
-
-    .sposa-single-5 .column-1 .blog-content-image {
-        min-height: 105vh;
-    }
-
     .sposa-single-5 .column-2 {
         margin-top: 5px;
-    }
-
-    .sposa-single-5 .column-2 .blog-content-image {
-        min-height: 50vh;
     }
 
     /* END SPOSA SINGLE */
@@ -2469,8 +2417,8 @@ body{
     }
 
     nav.scrolled .sub-menu-group {
-        min-width: 120px;
-        max-width: 120px;
+        min-width: 100px;
+        max-width: 100px;
     }
 
     nav .sub-sub-menu-group-link {
@@ -3262,13 +3210,9 @@ body{
 
     /* BLOG FAITHFULLY SPRING SUMMER */
 
-    .blog-content-image.header {
-        min-height: 270vh;
-    }
-
     .blog-content-text {
         font-size: 0.9vw;
-        max-width: 52vw;
+        max-width: 55vw;
     }
 
     .container.content.blog-content {
@@ -3277,7 +3221,7 @@ body{
 
     .blog-content-title {
         font-size: 2.2vw;
-        margin: 10% 15% 10vh 15%;
+        margin: 11% 15% 10vh 15%;
     }
 
     .blog-content-title.faithfully {
@@ -3286,37 +3230,37 @@ body{
     }
 
     .vertical-line-blog-content {
-        height: 3.5%;
+        height: 10vh;
+        margin: 0px auto;
         margin-top: -3%;
         margin-bottom: 2%;
-    }
-
-    .blog-faithfully-1 .blog-content-group {
-        /* margin: 10vh 0; */
     }
 
     .blog-content-group {
         max-width: 60%;
     }
 
-    .blog-faithfully-3 .column-1 .blog-content-image {
-        min-width: 96.5%;
-        max-width: 96.5%;
+    .blog-faithfully-3 .column-1 {
+        -ms-flex: 0 0 32.12%;
+        flex: 0 0 32.12%;
+        max-width: 32.12%;
+        margin-right: 0.9%;
     }
 
-    .blog-faithfully-3 .column-2 .blog-content-image {
-        min-width: 96.5%;
-        max-width: 96.5%;
+    .blog-faithfully-3 .column-2 {
+        -ms-flex: 0 0 32.12%;
+        flex: 0 0 32.12%;
+        max-width: 32.12%;
+        margin-right: 0.9%;
+        margin-left: 0.9%;
+    }
+    .blog-faithfully-3 .column-3 {
+        -ms-flex: 0 0 32.12%;
+        flex: 0 0 32.12%;
+        max-width: 32.12%;
+        margin-left: 0.9%;
     }
 
-    .blog-faithfully-3 .column-3 .blog-content-image {
-        min-width: 96.5%;
-        max-width: 96.5%;
-    }
-
-    .blog-faithfully-3 .blog-content-image {
-        min-height: 75vh;
-    }
 
     .blog-faithfully-4 .column-1 .blog-content-image {
         min-height: 130vh;
@@ -3337,15 +3281,16 @@ body{
     }
 
     .blog-faithfully-6 .column-1 {
-        -ms-flex: 0 0 45%;
-        flex: 0 0 45%;
-        max-width: 45%;
+        -ms-flex: 0 0 41%;
+        flex: 0 0 41%;
+        max-width: 41%;
     }
 
     .blog-faithfully-6 .column-2 {
         -ms-flex: 0 0 55%;
         flex: 0 0 55%;
         max-width: 55%;
+        margin-left: 4%;
     }
 
     .blog-faithfully-6 .column-1 .blog-content-image {
@@ -3373,70 +3318,87 @@ body{
 
     /* BLOG TRESNA */
 
-    .blog-tresna-2 .blog-content-image {
-        min-height: 125vh;
-        min-width: 90%;
-        max-width: 90%;
-        margin:7% 2% 7% 2%;
+    .blog-tresna-2 .column-1,
+    .blog-tresna-2 .column-2 {
+        margin:6%;
+        -ms-flex: 0 0 43%;
+        flex: 0 0 43%;
+        max-width: 43%;
     }
 
-    .blog-tresna-2 .column-3 .blog-content-image {
-        min-width: 100%;
-        max-width: 100%;
-        min-height: 200vh;
+    .blog-tresna-2 .column-1 {
+        margin-right: 1%;
+    }
+
+    .blog-tresna-2 .column-2 {
+        margin-left: 1%;
+    }
+
+    .blog-tresna-2 .column-3 {
+        margin-top: -3%;
     }
 
     .blog-tresna-3 {
-        margin-top: 4% !important;
+        margin-top: 6% !important;
     }
 
-    .blog-tresna-3 .column-1 .blog-content-image {
-        min-width: 94%;
-        max-width: 94%;
+    .blog-tresna-3 .column-1 {
+        -ms-flex: 0 0 39.8%;
+        flex: 0 0 39.8%;
+        max-width: 39.8%;
     }
 
-    .blog-tresna-3 .blog-content-image {
-        min-height: 135vh;
+    .blog-tresna-3 .column-2 {
+        -ms-flex: 0 0 57.2%;
+        flex: 0 0 57.2%;
+        max-width: 57.2%;
+        margin-left: 3%;
+    }
+
+    .blog-tresna-4 {
+        margin-top: 3% !important;
     }
 
     .blog-tresna-4 .column-1 {
         margin-bottom: 4%;
     }
 
-    .blog-tresna-4 .column-1 .blog-content-image {
-        min-height: 85vh;
-        margin: 0;
-    }
-
-    .blog-tresna-4 .column-2 .blog-content-image {
-        min-height: 125vh;
-    }
-
-    .blog-tresna-4 .column-3 .blog-content-image {
-        min-width: 80%;
-        max-width: 80%;
-        min-height: 105vh;
-        margin: 0px;
-    }
-
     .blog-tresna-4 .column-4 {
-        margin-top: 6%;
+        margin: auto;
+        margin-top: 8%;
         margin-bottom: 6%;
+        max-width: 80%;
     }
 
-    .blog-tresna-4 .column-4 .blog-content-image {
-        min-width: 85%;
-        max-width: 85%;
-        min-height: 195vh;
+    .blog-tresna-4 .column-2 {
+        -ms-flex: 0 0 49%;
+        flex: 0 0 49%;
+        max-width: 49%;
+    }
+
+    .blog-tresna-4 .column-3 {
+        -ms-flex: 0 0 42%;
+        flex: 0 0 42%;
+        max-width: 42%;
+        margin-left: 5%;
     }
 
     /* END BLOG TRESNA */
 
     /* SPOSA SINGLE */
 
+    .container.content.sposa-single {
+        padding:0px 7%;
+    }
+
     .sposa-single-header {
         background: #E6E7E8;
         padding: 5%;
+        padding-left: 7.5%;
+    }
+
+    .sposa-single-header .col-12 {
+        padding: 0%;
     }
 
     .sposa-single-title {
@@ -3462,14 +3424,10 @@ body{
         float: right;
     }
 
-    .sposa-single-1 .blog-content-image {
-        min-height: 170vh;
-    }
-
-    .sposa-single-2 .blog-content-image {
-        min-height: 70vh;
-        min-width: 63%;
-        max-width: 63%;
+    .sposa-single-2 .col-12 {
+        -ms-flex: 0 0 65%;
+        flex: 0 0 65%;
+        max-width: 65%;
     }
 
     .sposa-single-3 .column-1 .image-1 {
@@ -3482,27 +3440,24 @@ body{
     }
 
     .sposa-single-3 .column-1 {
-        -ms-flex: 0 0 37%;
-        flex: 0 0 37%;
-        max-width: 37%;
+        -ms-flex: 0 0 36.7%;
+        flex: 0 0 36.7%;
+        max-width: 36.7%;
     }
 
     .sposa-single-3 .column-2 {
         margin-top: 0px;
         margin-left: 1.5%;
-        -ms-flex: 0 0 61.5%;
-        flex: 0 0 61.5%;
-        max-width: 61.5%;
+        -ms-flex: 0 0 61.8%;
+        flex: 0 0 61.8%;
+        max-width: 61.8%;
     }
 
-    .sposa-single-3 .column-2 .blog-content-image {
-        min-height: 125vh;
-    }
-
-    .sposa-single-4 .blog-content-image {
-        min-height: 80vh;
-        min-width: 80%;
-        max-width: 80%;
+    .sposa-single-4 .col-12 {
+        -ms-flex: 0 0 82%;
+        flex: 0 0 82%;
+        max-width: 82%;
+        margin-left: 18%;
     }
 
     .sposa-single-5 .column-1 {
@@ -3511,20 +3466,12 @@ body{
         max-width: 30%;
     }
 
-    .sposa-single-5 .column-1 .blog-content-image {
-        min-height: 75vh;
-    }
-
     .sposa-single-5 .column-2 {
         margin-top: 0px;
         margin-left: 1.5%;
         -ms-flex: 0 0 68.5%;
         flex: 0 0 68.5%;
         max-width: 68.5%;
-    }
-
-    .sposa-single-5 .column-2 .blog-content-image {
-        min-height: 75vh;
     }
 
     /* END SPOSA SINGLE */
