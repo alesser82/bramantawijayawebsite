@@ -1196,7 +1196,7 @@ body{
     /* SIDEBAR MENU PRODUCT LIST */
 
     .product-list {
-        margin-top: 70px;
+        margin-top: 89px;
     }
 
     .product-list.non-sidebar {
@@ -1228,6 +1228,8 @@ body{
 
     .sidebar-menu {
         padding: 0px;
+        z-index: 20;
+        background: #FFFFFF;
     }
 
     .sidebar-menu-column {
@@ -1266,8 +1268,8 @@ body{
     }
 
     .sidebar-title-menu {
-        font-size: 12px;
-        letter-spacing: 2px;
+        font-size: 13px;
+        letter-spacing: 0.6px;
         font-family: "Georgia Bold",'Times New Roman', Times, serif;
         font-weight: 800;
         color: #444548;
@@ -1286,7 +1288,7 @@ body{
     }
 
     .product-column {
-        margin-top: 20px;
+        margin-top: 10px;
         padding: 0px;
     }
 
