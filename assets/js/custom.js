@@ -35,6 +35,9 @@ $(window).ready(function () {
             if (($(window).scrollTop() >= $aboutContent2.offset().top) && ($(window).scrollTop() < $aboutContent3.offset().top - 300)) {
                 $navabout.addClass('hide');
                 $navabout.css('background', '#FFFFFF !important');
+                $('.about-content-2 .about-image').animate({
+                    opacity: 1,
+                },1500);
             } else if (($(window).scrollTop() > $aboutContent3.offset().top - 100) && ($(window).scrollTop() < $aboutContent4.offset().top - 300)) {
                 $navabout.addClass('hide');
                 $navabout.css('background', '#FFFFFF !important');
