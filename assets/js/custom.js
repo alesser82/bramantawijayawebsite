@@ -215,18 +215,6 @@ $(window).ready(function () {
         bannerSlide(owl);
     }
 
-    // var owlPinkLabel = $('.owl-carousel.pink-label-item');
-    // owlPinkLabel.owlCarousel({
-    //     items: 2,
-    //     loop: true,
-    //     margin: 10,
-    //     autoplay: true,
-    //     autoplayTimeout: 3000,
-    //     autoplayHoverPause: true,
-    //     autowidth: true,
-    //     margin: 0
-    // });
-
     // End Banner
 
     // Blog
@@ -303,6 +291,14 @@ $(window).ready(function () {
                 $('.blog-dropdown').removeClass('open');                    
             }
         });
+    });
+
+    // Detail menu
+
+    
+
+    $('.product-info-title').click(function () {
+        $('.info-list').toggleClass('show');
     });
 
 });
