@@ -3229,6 +3229,7 @@ body{
     .blog-content-title.faithfully {
         margin-left: 5%;
         margin-right: 5%;
+        margin-top: 20%;
     }
 
     .vertical-line-blog-content {
@@ -3239,7 +3240,7 @@ body{
     }
 
     .blog-content-group {
-        max-width: 60%;
+        max-width: 64%;
     }
 
     .blog-faithfully-3 .column-1 {
