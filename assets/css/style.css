@@ -1012,6 +1012,12 @@ body{
         margin: 2.5% 0%;
     }
 
+    .blog-faithfully-1 {
+        min-height: 100vh;
+        background-position: center;
+        background-size: cover;
+    }
+
     /* BLOG CONTENT */
 
     /* END BLOG CONTENT */
@@ -2098,10 +2104,15 @@ body{
 
     .blog-content-title {
         font-size: 30px;
+        margin: 5% 0%;
     }
 
     .vertical-line-blog-content {
         height: 70px;
+    }
+
+    .blog-faithfully-1 {
+        min-height: unset;
     }
 
     .blog-faithfully-2 .blog-content-image {
