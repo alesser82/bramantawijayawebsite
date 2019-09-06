@@ -36,25 +36,25 @@ $(window).ready(function () {
 
             if (($(window).scrollTop() >= $aboutContent2.offset().top - 300) && ($(window).scrollTop() < $aboutContent3.offset().top - 300)) {
                 $aboutContent2.addClass('scrolled');
-                $aboutContent2.find('.about-text,.about-image').addClass('scrolled');
+                $aboutContent2.find('.about-text,.about-image,.about-image-column').addClass('scrolled');
             } else if (($(window).scrollTop() >= $aboutContent3.offset().top - 600) && ($(window).scrollTop() < $aboutContent4.offset().top - 300)) {
                 $aboutContent3.addClass('scrolled');
-                $aboutContent3.find('.about-text,.about-image').addClass('scrolled');
+                $aboutContent3.find('.about-text,.about-image,.about-image-column').addClass('scrolled');
             } else if (($(window).scrollTop() >= $aboutContent4.offset().top - 1000) && ($(window).scrollTop() < $aboutContent5.offset().top - 300)) {
                 $aboutContent4.addClass('scrolled');
-                $aboutContent4.find('.about-text,.about-image').addClass('scrolled');
+                $aboutContent4.find('.about-text,.about-image,.about-image-column').addClass('scrolled');
             } else if (($(window).scrollTop() >= $aboutContent5.offset().top - 300) && $(window).scrollTop() < $('footer').offset().top - 600) {
                 $aboutContent5.addClass('scrolled');
-                $aboutContent5.find('.about-text,.about-image').addClass('scrolled');
+                $aboutContent5.find('.about-text,.about-image,.about-image-column').addClass('scrolled');
             }
             
-            if (($(window).scrollTop() >= $aboutContent2.offset().top-300) && ($(window).scrollTop() < $aboutContent3.offset().top - 300)) {
+            if (($(window).scrollTop() >= $aboutContent2.offset().top-300) && ($(window).scrollTop() < $aboutContent3.offset().top - 500)) {
                 $navabout.addClass('hide');
                 $navabout.css('background', '#FFFFFF !important');
-            } else if (($(window).scrollTop() > $aboutContent3.offset().top) && ($(window).scrollTop() < $aboutContent4.offset().top - 300)) {
+            } else if (($(window).scrollTop() > $aboutContent3.offset().top-200) && ($(window).scrollTop() < $aboutContent4.offset().top - 500)) {
                 $navabout.addClass('hide');
                 $navabout.css('background', '#FFFFFF !important');
-            } else if (($(window).scrollTop() > $aboutContent4.offset().top - 100) && ($(window).scrollTop() < $aboutContent5.offset().top - 300)) {
+            } else if (($(window).scrollTop() > $aboutContent4.offset().top - 200) && ($(window).scrollTop() < $aboutContent5.offset().top - 500)) {
                 $navabout.addClass('hide');
                 $navabout.css('background', '#FFFFFF !important');
             } else if (($(window).scrollTop() > $aboutContent5.offset().top-200) && $(window).scrollTop() < $('footer').offset().top-600) {
