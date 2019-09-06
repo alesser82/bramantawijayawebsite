@@ -24,7 +24,6 @@ $(window).ready(function () {
         let $content = $('.sposa-content-1');
         $nav.toggleClass('scrolled', $(this).scrollTop() > $banner.height() - 100);
         $navelse.toggleClass('scrolled', $(this).scrollTop() >= $navelse.height());
-        // $navabout.addClass('hide', $(this).scrollTop() > $aboutContent2.offset().top);
         if ($('nav').hasClass('about')) {
             let $navabout = $("nav.about");
             let $aboutContent1 = $('.about-content-1');
@@ -35,18 +34,23 @@ $(window).ready(function () {
             if (($(window).scrollTop() >= $aboutContent2.offset().top) && ($(window).scrollTop() < $aboutContent3.offset().top - 300)) {
                 $navabout.addClass('hide');
                 $navabout.css('background', '#FFFFFF !important');
-                $('.about-content-2 .about-image').animate({
-                    opacity: 1,
-                },1500);
+                $aboutContent2.addClass('scrolled');
+                $aboutContent2.find('.about-text,.about-image').addClass('scrolled');
             } else if (($(window).scrollTop() > $aboutContent3.offset().top - 100) && ($(window).scrollTop() < $aboutContent4.offset().top - 300)) {
                 $navabout.addClass('hide');
                 $navabout.css('background', '#FFFFFF !important');
+                $aboutContent3.addClass('scrolled');
+                $aboutContent3.find('.about-text,.about-image').addClass('scrolled');
             } else if (($(window).scrollTop() > $aboutContent4.offset().top - 100) && ($(window).scrollTop() < $aboutContent5.offset().top - 300)) {
                 $navabout.addClass('hide');
                 $navabout.css('background', '#FFFFFF !important');
+                $aboutContent4.addClass('scrolled');
+                $aboutContent4.find('.about-text,.about-image').addClass('scrolled');
             } else if (($(window).scrollTop() > $aboutContent5.offset().top - 100)) {
                 $navabout.addClass('hide');
                 $navabout.css('background', '#FFFFFF !important');
+                $aboutContent5.addClass('scrolled');
+                $aboutContent5.find('.about-text,.about-image').addClass('scrolled');
             } else {
                 $navabout.removeClass('hide');
                 $navabout.css('background', '#E6E7E8');
@@ -209,7 +213,6 @@ $(window).ready(function () {
                 changeNavbar(color);
                 changeFooter(color);
             }
-            console.log(item);
         });
     }else{
         bannerSlide(owl);
