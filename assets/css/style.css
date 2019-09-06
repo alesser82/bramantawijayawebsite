@@ -2,6 +2,8 @@ html {
     scroll-behavior: smooth;
 }
 
+
+
 @font-face {
     font-family: 'Bodoni_Mt';
     src: url(../font/Bodoni_MT/BOD_R.eot);
@@ -3181,7 +3183,7 @@ body{
     }
 
     .about-content-1 .column-2 p {
-        margin:4% 0px 10% 0px;
+        margin:5% 0px 10% 0px;
         color: #414042;
         display: block;
         min-width: 28vw;
