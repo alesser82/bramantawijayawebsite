@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 @font-face {
     font-family: 'Bodoni_Mt';
     src: url(../font/Bodoni_MT/BOD_R.eot);
@@ -3071,9 +3075,9 @@ body{
     }
 
     .about-content-1 .column-2 {
-        -ms-flex: 0 0 51.5%;
-        flex: 0 0 51.5%;
-        max-width: 51.5%;
+        -ms-flex: 0 0 52%;
+        flex: 0 0 52%;
+        max-width: 52%;
         margin-left: 2.5%;
         -webkit-animation-name: opacityAnimation;
         /* Safari 4.0 - 8.0 */
@@ -3103,6 +3107,7 @@ body{
     to {width: 26vw}
     }
 
+
     .about-content-1 .column-1 h3 {
         left: 26%;
         top: 35vh;
@@ -3130,6 +3135,10 @@ body{
 
     .about-content-1 .about-line {
         display: none;
+    }
+
+    .about-content-1 p {
+        padding: 0%;
     }
 
     .about-content-1 .about-line.bottom {
@@ -3172,7 +3181,7 @@ body{
     }
 
     .about-content-1 .column-2 p {
-        margin:50px 0px 90px 0px;
+        margin:4% 0px 10% 0px;
         color: #414042;
         display: block;
         min-width: 28vw;

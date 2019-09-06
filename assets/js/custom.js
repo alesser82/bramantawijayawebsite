@@ -16,10 +16,12 @@ $(window).ready(function () {
         $('.sidebar-menu-group').removeClass('collapsed');
     }
 
+    var position = $(window).scrollTop();
+    var i = 1;
+
     function navbarScrolled() {
         let $nav = $("nav.home");
-        let $navelse = $("nav");       
-        
+        let $navelse = $("nav");
         let $banner = $('.banner');
         let $content = $('.sposa-content-1');
         $nav.toggleClass('scrolled', $(this).scrollTop() > $banner.height() - 100);
@@ -31,12 +33,12 @@ $(window).ready(function () {
             let $aboutContent3 = $('.about-content-3');
             let $aboutContent4 = $('.about-content-4');
             let $aboutContent5 = $('.about-content-5');
-            if (($(window).scrollTop() >= $aboutContent2.offset().top-100) && ($(window).scrollTop() < $aboutContent3.offset().top - 300)) {
+            if (($(window).scrollTop() >= $aboutContent2.offset().top-300) && ($(window).scrollTop() < $aboutContent3.offset().top - 300)) {
                 $navabout.addClass('hide');
                 $navabout.css('background', '#FFFFFF !important');
                 $aboutContent2.addClass('scrolled');
                 $aboutContent2.find('.about-text,.about-image').addClass('scrolled');
-            } else if (($(window).scrollTop() > $aboutContent3.offset().top - 100) && ($(window).scrollTop() < $aboutContent4.offset().top - 300)) {
+            } else if (($(window).scrollTop() > $aboutContent3.offset().top - 200) && ($(window).scrollTop() < $aboutContent4.offset().top - 300)) {
                 $navabout.addClass('hide');
                 $navabout.css('background', '#FFFFFF !important');
                 $aboutContent3.addClass('scrolled');
@@ -46,7 +48,7 @@ $(window).ready(function () {
                 $navabout.css('background', '#FFFFFF !important');
                 $aboutContent4.addClass('scrolled');
                 $aboutContent4.find('.about-text,.about-image').addClass('scrolled');
-            } else if (($(window).scrollTop() > $aboutContent5.offset().top - 100)) {
+            } else if (($(window).scrollTop() > $aboutContent5.offset().top - 300) && $(window).scrollTop() < $('footer').offset().top-600) {
                 $navabout.addClass('hide');
                 $navabout.css('background', '#FFFFFF !important');
                 $aboutContent5.addClass('scrolled');
