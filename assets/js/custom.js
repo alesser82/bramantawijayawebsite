@@ -31,7 +31,7 @@ $(window).ready(function () {
             let $aboutContent3 = $('.about-content-3');
             let $aboutContent4 = $('.about-content-4');
             let $aboutContent5 = $('.about-content-5');
-            if (($(window).scrollTop() >= $aboutContent2.offset().top) && ($(window).scrollTop() < $aboutContent3.offset().top - 300)) {
+            if (($(window).scrollTop() >= $aboutContent2.offset().top-100) && ($(window).scrollTop() < $aboutContent3.offset().top - 300)) {
                 $navabout.addClass('hide');
                 $navabout.css('background', '#FFFFFF !important');
                 $aboutContent2.addClass('scrolled');
