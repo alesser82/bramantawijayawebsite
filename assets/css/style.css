@@ -1,6 +1,6 @@
-html {
+/* html {
     scroll-behavior: smooth;
-}
+} */
 
 @font-face {
     font-family: 'Bodoni_Mt';
@@ -3073,15 +3073,17 @@ body{
 
     /* ABOUT */
 
+    
+
     .about-content-1 {
         margin-top: 0px;
         padding-top: 13vh;
     }
 
     .about-content-1 .column-1 {
-        -ms-flex: 0 0 30.4%;
-        flex: 0 0 30.4%;
-        max-width: 30.4%;
+        -ms-flex: 0 0 30.8%;
+        flex: 0 0 30.8%;
+        max-width: 30.8%;
         margin-left: 11.5%;
         -webkit-animation-name: opacityAnimation;
         /* Safari 4.0 - 8.0 */
@@ -3092,9 +3094,9 @@ body{
     }
 
     .about-content-1 .column-2 {
-        -ms-flex: 0 0 55.1%;
-        flex: 0 0 55.1%;
-        max-width: 55.1%;
+        -ms-flex: 0 0 54.1%;
+        flex: 0 0 54.1%;
+        max-width: 54.1%;
         margin-left: 2.8%;
         -webkit-animation-name: opacityAnimation;
         /* Safari 4.0 - 8.0 */
@@ -3136,6 +3138,17 @@ body{
     to {width: 26vw}
     }
 
+    body.about-page::-webkit-scrollbar {
+        width: 0 !important
+    }
+
+    body.about-page {
+        overflow: -moz-scrollbars-none;
+    }
+
+    body.about-page {
+        -ms-overflow-style: none;
+    }
 
     .about-content-1 .column-1 h3 {
         left: 26%;
