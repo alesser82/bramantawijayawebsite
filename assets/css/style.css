@@ -2,8 +2,6 @@ html {
     scroll-behavior: smooth;
 }
 
-
-
 @font-face {
     font-family: 'Bodoni_Mt';
     src: url(../font/Bodoni_MT/BOD_R.eot);
@@ -901,6 +899,8 @@ body{
     /* END BLOG */
 
     /* ABOUT */
+
+    
 
     .about-content-1 {
         background: #E6E7E8;
@@ -3191,7 +3191,7 @@ body{
     .about-image-column {
         margin-top: 20%;
         opacity: 0;
-        transition: 1s;
+        transition: 2s;
     }
 
     .about-image.scrolled,
@@ -3199,6 +3199,71 @@ body{
     .about-image-column.scrolled {
         margin-top: 0%;
         opacity: 1;
+    }
+
+    .about-content-1,
+    .about-content-2,
+    .about-content-3,
+    .about-content-4,
+    .about-content-5 {
+        display: none !important;
+    }
+
+    .about-content-1.active,
+    .about-content-2.active,
+    .about-content-3.active,
+    .about-content-4.active,
+    .about-content-5.active {
+        display: -ms-flexbox !important;
+        display: flex !important;
+        -ms-flex-wrap: wrap !important;
+        flex-wrap: wrap !important;
+    }
+
+    .about-content-2.active,
+    .about-content-3.active,
+    .about-content-4.active,
+    .about-content-5.active {
+        -webkit-animation-name: slideUp;
+        /* Safari 4.0 - 8.0 */
+        -webkit-animation-duration: 1s;
+        /* Safari 4.0 - 8.0 */
+        animation-name: slideUp;
+        animation-duration: 1s;
+    }
+
+    /* Safari 4.0 - 8.0 */
+    @-webkit-keyframes slideUp {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
+    /* Standard syntax */
+    @keyframes slideUp {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    .about-content-2.active,
+    .about-content-3.active {
+        padding-top: 18%;
+    }
+
+    .about-content-4.active {
+        padding-top: 26%;
+    }
+
+    .about-content-5.active {
+        padding-top: 35%;
     }
 
     .about-content-1 .column-2 h3 {
