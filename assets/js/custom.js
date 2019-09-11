@@ -16,32 +16,45 @@ $(window).ready(function () {
         $('.sidebar-menu-group').removeClass('collapsed');
     }
 
-    var position = $(window).scrollTop();
     var i = 1;
 
-    let $aboutContent1 = $('.about-content-1');
-    let $aboutContent2 = $('.about-content-2');
-    let $aboutContent3 = $('.about-content-3');
-    let $aboutContent4 = $('.about-content-4');
-    let $aboutContent5 = $('.about-content-5');
-
     $('body').mousewheel(function (event) {
-        if (event.deltaY == -1) {
-            if (($('.row').eq(i).hasClass('active')) && (i < 5)) {
-                $('.row').eq(i).removeClass('active');
-                $('.row').eq(i+1).addClass('active');
-                $('.row').eq(i + 1).find('.about-text,.about-image,.about-image-column').addClass('scrolled');
-                i++;
-            }
-        } else if (event.deltaY == 1){
-            if ($('.row').eq(i).hasClass('active') && (i > 1)) {
-                $('.row').eq(i).removeClass('active');
-                $('.row').eq(i - 1).addClass('active');
-                $('.row').eq(i - 1).find('.about-text,.about-image,.about-image-column').addClass('scrolled');
-                i--;
+        if($('nav').hasClass('about')){
+            if (event.deltaY == -1) {
+                pageScollToBottom();
+            } else if (event.deltaY == 1){
+                pageScollToUp();
             }
         }
     });
+
+    $('body').on("keydown", function (event) {
+        if ($('nav').hasClass('about')) {
+            if ((event.which === 40) || (event.which === 34)) {
+                pageScollToBottom();
+            } else if ((event.which === 38) || (event.which === 33)) {
+                pageScollToUp();
+            }
+        }
+    });
+
+    function pageScollToBottom() {
+        if (($('.row').eq(i).hasClass('active')) && (i < 5)) {
+            $('.row').eq(i).removeClass('active');
+            $('.row').eq(i + 1).addClass('active');
+            $('.row').eq(i + 1).find('.about-text,.about-image,.about-image-column').addClass('scrolled');
+            i++;
+        }
+    }
+
+    function pageScollToUp() {
+        if ($('.row').eq(i).hasClass('active') && (i > 1)) {
+            $('.row').eq(i).removeClass('active');
+            $('.row').eq(i - 1).addClass('active');
+            $('.row').eq(i - 1).find('.about-text,.about-image,.about-image-column').addClass('scrolled');
+            i--;
+        }
+    }
 
     function navbarScrolled() {
         let $nav = $("nav.home");
